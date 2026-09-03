@@ -14,7 +14,9 @@ function setup() {
 function draw() {
   tekenAchtergrond();
 
-  
+
+    
+  }
     tekenHuis(kleur,13);
     translate(150,0);
 
