@@ -83,7 +83,7 @@ var bommenArray = [];
 function setup() {
   canvas = createCanvas(900,600);
   canvas.parent('processing');
-  frameRate(10);
+  frameRate(10000000000000000000000000000000000000000);
   textFont("Verdana");
   textSize(90);
   

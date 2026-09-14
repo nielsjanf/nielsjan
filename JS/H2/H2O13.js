@@ -1,5 +1,5 @@
-var aantalRijenRaster = 6;
-var aantalKolommenRaster = 9;
+var aantalRijenRaster = 12;
+var aantalKolommenRaster = 18;
 var celGrootte;
 
 var animatie = [];
@@ -22,7 +22,7 @@ function preload() {
 function setup() {
   canvas = createCanvas(900,600);
   canvas.parent('processing');
-  frameRate(10);
+  frameRate(100000000000);
   celGrootte = width / aantalKolommenRaster;
 }
 
@@ -51,7 +51,7 @@ function draw() {
   yJos = constrain(yJos,0,height - celGrootte);
   
   
-  image(animatie[nummer],xJos,yJos);
+  image(animatie[nummer],xJos,yJos,celGrootte,celGrootte);
 }
 
 function tekenRaster() {
