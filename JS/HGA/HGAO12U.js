@@ -40,7 +40,11 @@ var raster = {
   },
   
   controleerRaak(mx,my,k,r) {
-    return false;
+    var mk = mx/this.grootte
+    var mr = my/this.grootte
+    var result = false
+    if(mk == k && mr == r)
+    return result;
   },
   
   tekenStip(x,y) {
